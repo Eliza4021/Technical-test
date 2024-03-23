@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(8, 173, 238);
+}
+.scorer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.manchester{
+    border-right: 4px solid white;
+}
+h2{
+    text-align: center;
+}
+h1{
+ background-color: white;
+ text-align: center;
+
+}

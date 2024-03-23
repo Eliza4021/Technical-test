@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Score-keeper-app</h1>
+    <div class="scorer">
+        <div class="manchester">
+            <h2>manchester City</h2>
+            <img src="Manchester.png" alt="manchester logo" height="200px">
+            <center><div id="counter">0</div><br>
+                <button onclick="handleClick1()">Goal</button><br><br><br>
+                <div id="counter2">0</div><br>
+                <button onclick="handleClick2()">Foal</button>
+            </center>
+            </div>
+            <div class="liverpool">
+                <h2>Liverpool</h2>
+                <img src="liverpooll.png" alt="liverpool logo" height="200px">
+                
+                <center><div id="counter3">0</div><br>
+                    <button onclick="handleClick3()">Goal</button><br><br><br>
+                    <div id="counter4">0</div><br>
+                    <button onclick="handleClick4()">Foal</button>
+                </center>
+            </div>
+
+    </div>
+    <center> <button onclick="resetCounter()">Reset</button></center>
+    <script>
+          let counterValue = 0;
+          let counterValue2=0;
+          let counterValue3=0;
+          let counterValue4=0;
+
+        const counterElement = document.getElementById("counter");
+        const counterElement2 = document.getElementById("counter2");
+        const counterElement3 = document.getElementById("counter3");
+        const counterElement4 = document.getElementById("counter4");
+
+
+    
+        function handleClick1() {
+          counterValue++;
+          counterElement.textContent = counterValue;
+        }
+          
+        function handleClick2() {
+          counterValue2 ++;
+          counterElement2.textContent = counterValue2;
+        }
+
+        function handleClick3() {
+          counterValue3++;
+          counterElement3.textContent = counterValue3;
+        }
+
+        function handleClick4() {
+          counterValue4++;
+          counterElement4.textContent = counterValue4;
+        }
+
+        function resetCounter() {
+          counterValue = 0;
+          countervalue2= 0;
+          counterValue3= 0;
+          counterValue4= 0;
+
+          counterElement.textContent = counterValue;
+          counterElement2.textContent = countervalue2;
+          counterElement3.textContent = counterValue3;
+          counterElement4.textContent = counterValue4;
+
+        }
+    </script>
+</body>
+</html>
